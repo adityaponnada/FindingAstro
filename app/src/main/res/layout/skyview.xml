@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:keepScreenOn="true">
+
+        <edu.neu.madcourse.findingastro.scrollingView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scrollingDrawable="@drawable/xando_background"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/snap_score"
+            android:layout_gravity="start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/score_text_color"
+            android:text="   SCORE:"
+            android:textSize="20sp"
+            style="@style/TileButton"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/arrow_feedback"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:foregroundGravity="center"/>
+
+        <TextView
+            android:id="@+id/current_level"
+            android:layout_gravity="end"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/score_text_color"
+            android:text="LEVEL:"
+            android:textSize="20sp"
+            style="@style/TileButton"/>
+
+    </RelativeLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center">
+
+           <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center_horizontal"
+                android:src="@drawable/astro"
+                android:id="@+id/astro"/>
+
+           <ImageView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:src="@drawable/ic_crop_free_24dp"
+                android:foregroundGravity="center_horizontal"
+               android:id="@+id/target"
+               android:adjustViewBounds="true"/>
+
+       </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:id="@+id/left_hold"
+            android:layout_gravity="start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/TileButton"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOLD"
+                android:textSize="20sp"
+                android:textColor="@color/button_color"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="end"
+           android:layout_marginLeft="384dp"
+           android:layout_marginStart="384dp"
+           android:layout_alignParentTop="true"
+           android:layout_toRightOf="@+id/relativeLayout"
+           android:layout_toEndOf="@+id/relativeLayout">
+
+        <ImageButton
+            android:id="@+id/right_hold"
+            android:layout_gravity="end"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="@style/TileButton"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="HOLD"
+               android:textSize="20sp"
+               android:textColor="@color/button_color"
+               android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true"/>
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

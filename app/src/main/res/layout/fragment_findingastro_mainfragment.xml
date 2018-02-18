@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:orientation="vertical"
+             tools:context="edu.neu.madcourse.findingastro.findingastro_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINDING ASTRO"
+        android:textSize="30sp"
+        android:textColor="@color/score_text_color"
+        android:layout_gravity="center_horizontal"/>
+    
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW GAME"
+        android:id="@+id/new_game_button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RULES"
+        android:id="@+id/rules_button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHALLENGE"
+        android:id="@+id/challenge_button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEADERBOARD"
+        android:id="@+id/leaderboard_button"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUIT"
+        android:id="@+id/quit_button"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

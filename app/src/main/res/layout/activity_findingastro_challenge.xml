@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="edu.neu.madcourse.findingastro.findingastro_challenge">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text = "Not registered yet?"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/score_text_color"
+        android:textSize="15sp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regid"
+            android:hint="Register here ..."
+            android:layout_weight="0.88"
+            android:theme="@style/MyEditTextTheme"
+            android:textColor="@color/score_text_color"
+            android:textColorHint="@color/score_text_color"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_button"
+            android:text="REGISTER"/>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="______ . ________ . ________ . ________"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/score_text_color"
+        android:layout_weight="0.60"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:text="CHALLENGE THEM ..."
+        android:textColor="@color/score_text_color"
+        android:layout_weight="0.56"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:fillViewport="true">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerlist"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIN HOME"
+            android:id="@+id/gohome_button"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHALLENGE"
+            android:id="@+id/notify_button"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refresh_button"
+        android:text="REFRESH"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNREGISTER"
+        android:id="@+id/unregister_button"
+        android:layout_gravity="center_horizontal"/>
+   </LinearLayout>
+
+
+</LinearLayout>

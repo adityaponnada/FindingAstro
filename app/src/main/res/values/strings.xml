@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FindingAstroGame</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_findingastro_main">findingastro_main</string>
+    <string name="rules">Astro is a NASA astronaut lost in outer space. NASA has sent you on a mission to find him wandering in outer space. Use your smartphone to track him. At each level you will have to spot astro a given number of times. Astro is erratic and can not stay at a place for long. Therefore, you have to be quick and swift</string>
+    <string name="rules_two">The image above shows your game screen. Astro is right at the center. When you start, he is going to disappear in any random direction. In order to start an dplay the game, make sure you hold both the buttons at the bottom (as shown in the image below).</string>
+    <string name="rules_three">Next, keep your hands stretched while holding the phone with both the hands. As soon as the astronaut moves, move your device in that direction keeping your hands stretched. An arrow on the top will tell you in which direction you have to move. The green and blue crosshairs will help you kep your phone stable (as shown in the image below)</string>
+    <string name="rules_four">Keep holding the buttons until you find Astro. As soon as Astro appears on your screen, release either of the held buttons to confirm that you have found one. Right after that, hold both the buttons quickly to start the second move.\n\
+    So get set GO!</string>
+</resources>
